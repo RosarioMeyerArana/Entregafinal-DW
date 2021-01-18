@@ -16,11 +16,8 @@
 .navbar .container-fluid {
   display: flex;
 }
-.navbar .container-fluid .navbar-nav {
-  color: #46515C;
-}
 .navbar .container-fluid .navbar-nav .nav-nosotros {
-  margin-left: 20px;
+  margin-left: 1rem;
 }
 .navbar .container-fluid .navbar-nav .nav-item {
   margin-right: 25px;
@@ -32,36 +29,15 @@
 .navbar .container-fluid .navbar-nav .nav-item .button-shop {
   color: #46515C;
 }
-.navbar .container-fluid .navbar-nav .nav-item .cabernet a {
-  text-decoration: none;
-  color: #46515C;
-}
-.navbar .container-fluid .navbar-nav .nav-item .cabernet:hover {
-  color: #A51C80;
-}
-.navbar .container-fluid .navbar-nav .nav-item .cabernet:hover > .dropdown-cabernet {
-  display: block;
-  color: #A51C80;
-}
-.navbar .container-fluid .navbar-nav .nav-item .cabernet .dropdown-cabernet {
-  position: absolute;
-  top: -8px;
-  right: -288px;
-  list-style: none;
-  background-color: white;
-  padding: 10px;
-  border-color: #46515C;
-  border-radius: 3px;
-  display: none;
-}
-.navbar .container-fluid .container-carrito {
+.navbar .container-carrito {
   justify-content: flex-end;
 }
-.navbar .container-fluid .container-carrito .fa-shopping-cart {
+.navbar .container-carrito .fa-shopping-cart {
   color: #46515C;
   font-size: 20px;
+  margin-right: 2rem;
 }
-.navbar .container-fluid .container-carrito .fa-shopping-cart:hover {
+.navbar .container-carrito .fa-shopping-cart:hover {
   color: #A51C80;
 }
 
@@ -617,6 +593,14 @@
     font-size: 20px;
   }
 }
+.shop-container {
+  margin-top: 6rem;
+  margin-left: 4rem;
+}
+.shop-container .inline-shop {
+  display: inline-block;
+}
+
 * {
   margin: 0%;
   padding: 0%;
