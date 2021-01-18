@@ -1,0 +1,312 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #D2DCDE;
+    font-family: 'Spinnaker', sans-serif;
+    color: #46515C;
+}
+
+.navbar{
+    background-color: #D2DCDE;
+    font-family: 'Spinnaker', sans-serif;
+    color: #46515C;
+    font-size: 15px;
+    position: fixed;
+    width: 100%;
+    padding: 15px 20px;
+    z-index: 5;
+}
+
+.nav-item{
+    margin-right: 25px;
+}
+
+.nav-item:hover{
+text-decoration: underline;
+}
+
+.nav-nosotros{
+    margin-left: 20px;
+}
+
+.button-shop{
+    color: #46515C;
+}
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.cabernet a{
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-cabernet a{
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-cabernet{
+    position: absolute;
+    top: -8px;
+    right: -200px;
+    list-style: none;
+    background-color: white;
+    padding: 10px;
+    border-color: 2px solid #46515C;
+    border-radius: 3px;
+    display: none;
+}
+
+.cabernet:hover > .dropdown-cabernet{
+    display: block
+}
+
+.button-iniciar-sesion{
+    background-color: #D2DCDE;
+    border-radius: 10px;
+    border-width: thin;
+    width: 120px;
+    height: 30px;
+}
+
+.button-iniciar-sesion a{
+    text-decoration: none;
+    color: #46515C;
+}
+
+.button-iniciar-sesion:hover{
+    text-decoration: underline;
+}
+
+/* HOME */
+
+#home{
+    margin: 0px 0px 80px 40px;
+    background-color: #D2DCDE;
+}
+.texto-home{
+    font-family: 'Spinnaker', sans-serif;
+    font-size: 80px;
+    line-height: 1.4;
+    color: #A51C80;
+    position: absolute;
+    top: 90px;   
+    z-index: 3;
+}
+
+.img-home{
+    position: relative;
+    top: 200px;
+    left: 370px;
+    width: 70%;
+}
+
+.button-home{
+    font-family: 'Spinnaker', sans-serif;
+    font-size: 23px;
+    background-image: linear-gradient(to right, #98BEDA 30%, #A51C80);
+    border-radius: 10px;
+    border-width: 0px;
+    width: 170px;
+    height: 45px;
+    position: absolute;
+    top: 450px;
+    left: 40px;
+    z-index: 3;
+    
+}
+
+.button-home a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.button-home:hover{
+    transform: scale(1.1);
+}
+
+/* NOSOTROS */
+
+.container-nosotros{
+    margin-top: 400px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.titulo-nosotros{
+    font-family: 'Spinnaker', sans-serif;
+    font-size: 30px;
+    color: #A51C80;
+}
+
+.nosotros-textos{
+    background-color: whitesmoke;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    z-index: 3;
+    position: relative;
+    right: 80px;
+    top: 25px;
+}
+
+/* TRIPACKS */
+
+#tripacks{
+    margin: 80px;
+}
+
+.titulo-tripacks{
+    font-family: 'Spinnaker', sans-serif;
+    color: white;
+    font-size: 150px;
+    position: relative;
+    top: 90px;
+    z-index: 1;
+}
+
+.container-tripacks{
+    width: 100%;
+    background-color: white;
+    font-family: 'Spinnaker', sans-serif;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    z-index: 4;
+}
+
+.item-tripack p{
+    text-align: center;
+    font-family: 'Spinnaker', sans-serif;
+}
+
+.nombre-tripack{
+    margin-top: 20px;
+}
+
+.item-tripack img:hover{
+    transform: scale(1.3);
+    transition-duration: 0.8s;
+}
+
+.button-tripacks{
+    background-image: linear-gradient(to right, #98BEDA 30%, #A51C80);
+    border-radius: 10px;
+    border-width: 0px;
+    width: 120px;
+    height: 32px ;
+    font-size: 20px;
+    margin-top: 18px;
+}
+
+.button-tripacks a{
+    text-decoration: none;
+    color: whitesmoke;
+
+}
+
+/* BODEGAS */
+
+.container-bodegas{
+    margin: 160px 80px;
+}
+
+
+.bodegas-textos{
+    background-color: whitesmoke;
+    padding: 20px;
+    width: 300px;
+    height: 350px;
+    z-index: 3;
+    position: relative;
+    top: 20px;
+    left: 80px;
+}
+
+
+.titulo-bodegas{
+    font-family: 'Spinnaker', sans-serif;
+    font-size: 30px;
+    color: #A51C80;
+}
+
+/* CONTACTO */
+
+#contacto{
+    margin: 80px;      
+}
+
+.form-group{
+    margin-top: 15px;
+    font-family: 'Spinnaker', sans-serif;
+    color: #46515C;
+}
+
+.titulo-contacto{
+    font-family: 'Spinnaker', sans-serif;
+    font-size: 30px;
+    color: #A51C80;
+}
+
+.texto-contacto{
+    font-family: 'Spinnaker', sans-serif;
+    color: #46515C;
+}
+
+.button-submit{
+    font-family: 'Spinnaker', sans-serif;
+    background-color: #D2DCDE;
+    color: #46515C;
+    border-radius: 10px;
+    border-width: thin;
+    border-color: #46515C;
+    height: 30px;
+    width: 100px;
+    position: relative;
+    top: 96px;
+}
+
+.button-submit:hover{
+    text-decoration: underline;
+}
+
+/* FOOTER */
+
+.footer{
+    padding: 20px 80px;
+    background-color: #EDF8F9; 
+}
+
+.container-footer{
+    background-color: #EDF8F9;
+    display: flex;
+    justify-content: space-between;
+}
+
+.newsletter{
+    font-family: 'Spinnaker', sans-serif;
+    font-size: 15px;
+}
+
+.container-footer .form-group input{
+    height: 25px ;
+    width: 140px;
+}
+
+.rrss a{
+    margin-right: 12px;
+    text-decoration: none;
+}
+
+.rrss a:last-of-type{
+    margin-right: 0%;
+}

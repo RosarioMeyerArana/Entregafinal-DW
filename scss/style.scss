@@ -1,0 +1,85 @@
+@import 'base/fonts';
+@import 'base/colors';
+@import 'components/header';
+@import 'extension/mixins';
+@import 'extension/extend';
+@import 'components/footer';
+@import 'components/nosotros';
+@import 'components/tripacks';
+@import 'components/contacto';
+@import 'components/bodegas';
+@import 'components/home';
+@import 'components/pasos';
+@import 'components/shop';
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+
+body{
+    background-color: $bg-color;
+}
+
+
+.texto-contacto, .button-submit, .form-group, 
+.button-iniciar-sesion a, .dropdown-cabernet a {
+     color: $text-color;
+ }
+ 
+
+ .container-tripacks, .item-tripack p,
+ .form-group, .texto-contacto, .button-submit, .newsletter {
+     font-family: $font-texto;
+ }
+
+ 
+ .texto-home, .button-home, .titulo-nosotros,
+ .titulo-tripacks, .titulo-bodegas, .titulo-contacto {
+     @extend %titulos;
+ }
+
+
+ .nosotros-textos, .bodegas-textos{
+    @extend %texto;
+ }
+
+.container-whapp{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        bottom: 30px;
+        right: 30px;
+        background-color: #25d366;
+        color: #FFF;
+        border-radius: 50px;
+        font-size: 30px;
+        
+        z-index: 5;
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
+}
+
+.newsletter-container{
+    margin-bottom: 0px;
+}
+
+.carrito-shop{
+    font-family: $font-texto;
+    background-color: $bg-color;
+    color: $text-color;
+    border-radius: 30px;
+    border: none;
+}

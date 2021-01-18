@@ -1,0 +1,47 @@
+.container-pasos{
+    // margin: 200px 80px 80px 80px;
+
+    .paso-1, .paso-2, .paso-3{
+
+        img{
+            width: 50%;
+        }
+ 
+        p{
+            margin-top: 15%;
+            text-align: center;
+        }
+    }
+}
+
+    /* MEDIA QUERIES */
+// X-Small devices (portrait phones, less than 576px)
+    @media (max-width: 575.98px){
+        .paso-1, .paso-2, .paso-3{
+            font-size: 8px;
+        }
+    }
+
+      // Small devices (landscape phones, less than 768px)
+@media (min-width: 576px) and (max-width: 767.98px) {  
+    
+    .paso-1, .paso-2, .paso-3{
+        font-size: 12px;
+    }
+} 
+
+    // Large devices (desktops, less than 1200px)
+@media (min-width: 992px) and (max-width: 1199.98px){ 
+      
+    .paso-1, .paso-2, .paso-3{
+        font-size: 16px;
+    }
+} 
+
+// X-Large devices (large desktops, less than 1400px)
+@media (min-width: 1199.99px) {
+    
+    .paso-1, .paso-2, .paso-3{
+        font-size: 20px;
+    }
+}

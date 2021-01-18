@@ -1,0 +1,676 @@
+.navbar {
+  background-color: #EFEFEF;
+  font-family: "gandhi_sansregular";
+  font-size: 16px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 5;
+}
+.navbar a {
+  color: #46515C;
+}
+.navbar a:hover {
+  color: #A51C80;
+}
+.navbar .container-fluid {
+  display: flex;
+}
+.navbar .container-fluid .navbar-nav {
+  color: #46515C;
+}
+.navbar .container-fluid .navbar-nav .nav-nosotros {
+  margin-left: 20px;
+}
+.navbar .container-fluid .navbar-nav .nav-item {
+  margin-right: 25px;
+}
+.navbar .container-fluid .navbar-nav .nav-item:hover {
+  text-decoration: underline;
+  color: #A51C80;
+}
+.navbar .container-fluid .navbar-nav .nav-item .button-shop {
+  color: #46515C;
+}
+.navbar .container-fluid .navbar-nav .nav-item .cabernet a {
+  text-decoration: none;
+  color: #46515C;
+}
+.navbar .container-fluid .navbar-nav .nav-item .cabernet:hover {
+  color: #A51C80;
+}
+.navbar .container-fluid .navbar-nav .nav-item .cabernet:hover > .dropdown-cabernet {
+  display: block;
+  color: #A51C80;
+}
+.navbar .container-fluid .navbar-nav .nav-item .cabernet .dropdown-cabernet {
+  position: absolute;
+  top: -8px;
+  right: -288px;
+  list-style: none;
+  background-color: white;
+  padding: 10px;
+  border-color: #46515C;
+  border-radius: 3px;
+  display: none;
+}
+.navbar .container-fluid .container-carrito {
+  justify-content: flex-end;
+}
+.navbar .container-fluid .container-carrito .fa-shopping-cart {
+  color: #46515C;
+  font-size: 20px;
+}
+.navbar .container-fluid .container-carrito .fa-shopping-cart:hover {
+  color: #A51C80;
+}
+
+.container .home-textos .button-home, #contacto .container-btn .button-submit, #tripacks .container-button-tripacks .button-tripacks {
+  font-family: "Spinnaker", sans-serif;
+  background-color: #EFEFEF;
+  color: #46515C;
+  border-radius: 30px;
+  border-width: thin;
+  border-color: #46515C;
+}
+
+.texto-home, .button-home, .titulo-nosotros,
+.titulo-tripacks, .titulo-bodegas, .titulo-contacto {
+  font-family: "Spinnaker", sans-serif;
+  color: #A51C80;
+  font-size: 35px;
+}
+
+.nosotros-textos, .bodegas-textos, .container .home-textos .subtitulo-home {
+  font-family: "gandhi_sansregular";
+  color: #46515C;
+}
+
+.footer {
+  background-color: #DBDEE1;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer p {
+  font-family: "Spinnaker", sans-serif;
+  margin-bottom: 8px;
+}
+.footer a {
+  text-decoration: none;
+  color: #46515C;
+}
+.footer .delsurwines-footer {
+  flex-direction: column;
+}
+.footer .delsurwines-footer ul {
+  list-style: none;
+}
+.footer .shop-footer {
+  flex-direction: column;
+}
+.footer .shop-footer ul {
+  list-style: none;
+}
+.footer .rrss {
+  flex-direction: column;
+}
+.footer .rrss i {
+  font-size: 25px;
+  margin-right: 15px;
+}
+.footer .copyright {
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+.container {
+  scroll-margin-top: 8em;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 575.98px) {
+  .container-nosotros .img-nosotros {
+    width: 70%;
+  }
+  .container-nosotros .nosotros-textos {
+    margin-top: 10px;
+  }
+  .container-nosotros .nosotros-textos .titulo-nosotros {
+    margin-top: 10px;
+    font-size: 27px;
+  }
+  .container-nosotros .nosotros-textos .nosotros-textos {
+    text-align: center;
+    font-size: 15px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .nosotros-textos {
+    margin-left: 2px;
+  }
+  .nosotros-textos .titulo-nosotros {
+    font-size: 27px;
+  }
+  .nosotros-textos .nosotros-textos {
+    font-size: 12px;
+    text-align: left;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .nosotros-textos {
+    margin-left: 10px;
+  }
+  .nosotros-textos .titulo-nosotros {
+    font-size: 27px;
+    margin-bottom: 6px;
+  }
+  .nosotros-textos .nosotros-textos {
+    font-size: 10px;
+    text-align: left;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .nosotros-textos {
+    margin-left: 20px;
+  }
+  .nosotros-textos .titulo-nosotros {
+    font-size: 27px;
+    margin-bottom: 6px;
+  }
+  .nosotros-textos .nosotros-textos {
+    font-size: 16px;
+    text-align: left;
+  }
+}
+@media (min-width: 1199.99px) {
+  .nosotros-textos {
+    margin-left: 10px;
+  }
+  .nosotros-textos .titulo-nosotros {
+    font-size: 27px;
+    margin-bottom: 6px;
+  }
+  .nosotros-textos .nosotros-textos {
+    font-size: 16px;
+    text-align: left;
+  }
+}
+.container .home-textos .button-home, #contacto .container-btn .button-submit, #tripacks .container-button-tripacks .button-tripacks {
+  font-family: "Spinnaker", sans-serif;
+  background-color: #EFEFEF;
+  color: #46515C;
+  border-radius: 30px;
+  border-width: thin;
+  border-color: #46515C;
+}
+
+.texto-home, .button-home, .titulo-nosotros,
+.titulo-tripacks, .titulo-bodegas, .titulo-contacto {
+  font-family: "Spinnaker", sans-serif;
+  color: #A51C80;
+  font-size: 35px;
+}
+
+.nosotros-textos, .bodegas-textos, .container .home-textos .subtitulo-home {
+  font-family: "gandhi_sansregular";
+  color: #46515C;
+}
+
+#tripacks {
+  padding: 0px 80px 0px 80px;
+  scroll-margin-top: -3em;
+  background-color: #DBDEE1;
+}
+#tripacks .titulo-tripacks {
+  color: whitesmoke;
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+#tripacks .container-tripacks {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+#tripacks .container-tripacks .item-tripack {
+  padding: 5px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  border: none;
+}
+#tripacks .container-tripacks .item-tripack .nombre-tripack {
+  margin-top: 10px;
+  font-family: "Spinnaker", sans-serif;
+}
+#tripacks .container-tripacks .item-tripack p {
+  text-align: center;
+}
+#tripacks .container-tripacks .item-tripack img:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+  transition-duration: 0.8s;
+}
+#tripacks .container-button-tripacks {
+  display: flex;
+  justify-content: flex-end;
+}
+#tripacks .container-button-tripacks .button-tripacks {
+  width: 120px;
+  height: 32px;
+  font-size: 20px;
+}
+#tripacks .container-button-tripacks .button-tripacks a {
+  text-decoration: none;
+  color: #46515C;
+}
+
+.container .home-textos .button-home, #contacto .container-btn .button-submit, #tripacks .container-button-tripacks .button-tripacks {
+  font-family: "Spinnaker", sans-serif;
+  background-color: #EFEFEF;
+  color: #46515C;
+  border-radius: 30px;
+  border-width: thin;
+  border-color: #46515C;
+}
+
+.texto-home, .button-home, .titulo-nosotros,
+.titulo-tripacks, .titulo-bodegas, .titulo-contacto {
+  font-family: "Spinnaker", sans-serif;
+  color: #A51C80;
+  font-size: 35px;
+}
+
+.nosotros-textos, .bodegas-textos, .container .home-textos .subtitulo-home {
+  font-family: "gandhi_sansregular";
+  color: #46515C;
+}
+
+#contacto {
+  scroll-margin-top: 8em;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#contacto .form-group {
+  margin-top: 15px;
+  font-family: "Spinnaker", sans-serif;
+  color: #46515C;
+}
+#contacto .container-btn {
+  margin-top: 20px;
+}
+#contacto .container-btn .button-submit {
+  height: 30px;
+  width: 95px;
+}
+#contacto .container-btn .button-submit:hover {
+  text-decoration: underline;
+}
+#contacto .map-pickup {
+  margin-right: 80px;
+}
+#contacto .map-pickup iframe {
+  border-radius: 10px;
+}
+
+#bodegas {
+  scroll-margin-top: 9em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#bodegas .container-bodegas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#bodegas .container-bodegas .bodegas-textos {
+  margin-right: 5%;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 575.98px) {
+  .bodegas-textos {
+    text-align: center;
+  }
+  .bodegas-textos .titulo-bodegas {
+    font-size: 27px;
+  }
+  .bodegas-textos .texto-bodegas {
+    font-size: 15px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .bodegas-textos {
+    text-align: left;
+  }
+  .bodegas-textos .titulo-bodegas {
+    font-size: 24px;
+    margin-bottom: 8px;
+    line-height: 1.3;
+  }
+  .bodegas-textos .texto-bodegas {
+    font-size: 12px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .bodegas-textos {
+    text-align: left;
+  }
+  .bodegas-textos .titulo-bodegas {
+    font-size: 27px;
+  }
+  .bodegas-textos .texto-bodegas {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1199.99px) {
+  .bodegas-textos {
+    text-align: left;
+  }
+  .bodegas-textos .titulo-bodegas {
+    font-size: 27px;
+  }
+  .bodegas-textos .texto-bodegas {
+    font-size: 15px;
+  }
+}
+.container .home-textos .button-home, #tripacks .container-button-tripacks .button-tripacks, #contacto .container-btn .button-submit {
+  font-family: "Spinnaker", sans-serif;
+  background-color: #EFEFEF;
+  color: #46515C;
+  border-radius: 30px;
+  border-width: thin;
+  border-color: #46515C;
+}
+
+.texto-home, .button-home, .titulo-nosotros,
+.titulo-tripacks, .titulo-bodegas, .titulo-contacto {
+  font-family: "Spinnaker", sans-serif;
+  color: #A51C80;
+  font-size: 35px;
+}
+
+.nosotros-textos, .bodegas-textos, .container .home-textos .subtitulo-home {
+  font-family: "gandhi_sansregular";
+  color: #46515C;
+}
+
+.container {
+  display: flex;
+  margin-top: 5rem;
+}
+.container .container-home {
+  background-image: url(../../imagenes/fondo-home.svg);
+}
+.container .home-textos {
+  display: flex;
+  justify-content: flex-start;
+}
+.container .home-textos .texto-home {
+  font-family: "Spinnaker", sans-serif;
+  color: #A51C80;
+}
+.container .home-textos .button-home {
+  text-align: center;
+  margin-top: 14px;
+}
+.container .home-textos .button-home a {
+  color: #46515C;
+  text-decoration: none;
+}
+.container .home-textos .button-home:hover {
+  background-color: #DBDEE1;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 575.98px) {
+  #home {
+    margin: 80px 20px;
+  }
+
+  .img-home-sm {
+    display: block;
+    text-align: center;
+  }
+
+  .img-home {
+    display: none;
+  }
+
+  .home-textos .texto-home {
+    text-align: center;
+    font-size: 38px;
+    line-height: 1.2;
+    margin-top: 10px;
+  }
+  .home-textos .subtitulo-home {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.3;
+    margin-top: 8px;
+  }
+  .home-textos .button-home {
+    font-size: 16px;
+    width: 130px;
+    height: 40px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .container {
+    margin: 90px 50px;
+    display: flex;
+    align-items: center;
+  }
+
+  .img-home-sm {
+    display: block;
+  }
+
+  .img-home {
+    display: none;
+  }
+
+  .home-textos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .home-textos .texto-home {
+    text-align: left;
+    font-size: 30px;
+    line-height: 1.2;
+    margin-top: 12px;
+  }
+  .home-textos .subtitulo-home {
+    text-align: left;
+    font-size: 14px;
+    margin-top: 12px;
+  }
+  .home-textos .button-home {
+    font-size: 13px;
+    width: 115px;
+    height: 30px;
+    margin-top: 12px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .container {
+    margin: 100px 50px;
+  }
+
+  .img-home-sm {
+    display: none;
+  }
+
+  .img-home {
+    display: block;
+    width: 150%;
+  }
+
+  .home-textos .texto-home {
+    font-size: 43px;
+    line-height: 1.2;
+    margin-top: 12px;
+    text-align: left;
+  }
+  .home-textos .subtitulo-home {
+    font-size: 15px;
+    margin-top: 13px;
+  }
+  .home-textos .button-home {
+    font-size: 13px;
+    width: 120px;
+    height: 30px;
+    margin-top: 14px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .container {
+    margin: 100px 60px;
+  }
+
+  .img-home-sm {
+    display: none;
+  }
+
+  .img-home {
+    display: block;
+    width: 140%;
+  }
+
+  .home-textos .texto-home {
+    font-size: 58px;
+    line-height: 1.2;
+    margin-top: 12px;
+    text-align: left;
+  }
+  .home-textos .subtitulo-home {
+    font-size: 18px;
+    margin-top: 13px;
+  }
+  .home-textos .button-home {
+    font-size: 14px;
+    width: 120px;
+    height: 30px;
+    margin-top: 14px;
+  }
+}
+@media (min-width: 1199.99px) {
+  .img-home-sm {
+    display: none;
+  }
+
+  .img-home {
+    display: block;
+  }
+
+  .home-textos .texto-home {
+    font-size: 65px;
+    line-height: 1.2;
+    text-align: left;
+  }
+  .home-textos .subtitulo-home {
+    font-size: 18px;
+    margin-top: 13px;
+    text-align: left;
+    width: 70%;
+  }
+  .home-textos .button-home {
+    font-size: 17px;
+    width: 150px;
+    height: 33px;
+    margin-top: 14px;
+  }
+}
+.container-pasos .paso-1 img, .container-pasos .paso-2 img, .container-pasos .paso-3 img {
+  width: 50%;
+}
+.container-pasos .paso-1 p, .container-pasos .paso-2 p, .container-pasos .paso-3 p {
+  margin-top: 15%;
+  text-align: center;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 575.98px) {
+  .paso-1, .paso-2, .paso-3 {
+    font-size: 8px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .paso-1, .paso-2, .paso-3 {
+    font-size: 12px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .paso-1, .paso-2, .paso-3 {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1199.99px) {
+  .paso-1, .paso-2, .paso-3 {
+    font-size: 20px;
+  }
+}
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #EFEFEF;
+}
+
+.texto-contacto, .button-submit, .form-group,
+.button-iniciar-sesion a, .dropdown-cabernet a {
+  color: #46515C;
+}
+
+.container-tripacks, .item-tripack p,
+.form-group, .texto-contacto, .button-submit, .newsletter {
+  font-family: "gandhi_sansregular";
+}
+
+.container-whapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 30px;
+  right: 30px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  font-size: 30px;
+  z-index: 5;
+}
+.container-whapp a {
+  text-decoration: none;
+  color: white;
+}
+
+.newsletter-container {
+  margin-bottom: 0px;
+}
+
+.carrito-shop {
+  font-family: "gandhi_sansregular";
+  background-color: #EFEFEF;
+  color: #46515C;
+  border-radius: 30px;
+  border: none;
+}
+
+/*# sourceMappingURL=style.css.map */

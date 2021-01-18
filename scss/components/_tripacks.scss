@@ -1,0 +1,63 @@
+@import '../extension/mixins';
+@import '../extension/extend';
+@import '../base/colors';
+
+
+#tripacks{
+    padding: 0px 80px 0px 80px;
+    scroll-margin-top: -3em;
+    background-color: $bg-tripacks;
+
+    .titulo-tripacks{
+        color: $bg-color-secundario;
+        font-size: 70px;
+        margin-bottom: 20px;
+    }   
+
+    .container-tripacks{
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+    
+        .item-tripack {
+            padding: 5px;
+            background-color: $bg-color-secundario;
+            border-radius: 10px;
+            border: none;
+
+            .nombre-tripack{
+                margin-top: 10px;
+                font-family: $font-titulo;
+            }
+
+            p{
+            text-align: center;
+            }
+
+            img:hover {
+                @include transform(scale(1.1));
+                transition-duration: 0.8s;
+            }
+        
+        }
+    
+    }
+  
+    .container-button-tripacks{
+        display: flex;
+        justify-content: flex-end;
+
+        .button-tripacks{
+            @extend %buttons;
+            width: 120px;
+            height: 32px ;
+            font-size: 20px;
+    
+            a{
+                text-decoration: none;
+                color: $text-color;
+            }
+        }
+    }
+
+}

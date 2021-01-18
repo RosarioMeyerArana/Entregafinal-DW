@@ -1,0 +1,105 @@
+@import '../base/colors';
+
+.container{
+    scroll-margin-top: 8em;
+    // margin: 150px 80px;
+}
+
+/* MEDIA QUERIES */
+    // X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px){
+    .container-nosotros{
+        
+        .img-nosotros{
+            width: 70%;
+        }
+
+        .nosotros-textos{
+            margin-top: 10px;
+
+        .titulo-nosotros{
+            margin-top: 10px;
+            font-size: 27px;
+        }
+
+        .nosotros-textos{
+            text-align: center;
+            font-size: 15px;
+
+        }
+        }
+    }
+}
+
+    // Small devices (landscape phones, less than 768px)
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+        .nosotros-textos{
+            margin-left: 2px;
+
+            .titulo-nosotros{
+            font-size: 27px;
+            }
+
+            .nosotros-textos{
+            font-size: 12px;
+            text-align: left;
+            
+            }
+        }
+
+}
+
+
+// Medium devices (tablets, less than 992px)
+@media (min-width: 768px) and (max-width: 991.98px){
+    .nosotros-textos{
+        margin-left: 10px;
+
+        .titulo-nosotros{
+            font-size: 27px;
+            margin-bottom: 6px;
+            }
+
+            .nosotros-textos{
+            font-size: 10px;
+            text-align: left;
+            }   
+        }
+ }
+
+
+// Large devices (desktops, less than 1200px)
+@media (min-width: 992px) and (max-width: 1199.98px){
+    .nosotros-textos{
+        margin-left: 20px;
+
+        .titulo-nosotros{
+            font-size: 27px;
+            margin-bottom: 6px;
+            }
+
+            .nosotros-textos{
+            font-size: 16px;
+            text-align: left;
+            }   
+     }
+}
+
+
+// X-Large devices (large desktops, less than 1400px)
+@media (min-width: 1199.99px){
+    .nosotros-textos{
+        margin-left: 10px;
+
+        .titulo-nosotros{
+            font-size: 27px;
+            margin-bottom: 6px;
+            }
+
+            .nosotros-textos{
+            font-size: 16px;
+            text-align: left;
+            }   
+     }
+}

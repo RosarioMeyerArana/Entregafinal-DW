@@ -1,0 +1,12 @@
+@mixin transform($property) {
+    -webkit-transform: $property;
+    -ms-transform: $property;
+    -o-transform: $property;
+    transform: $property;
+}
+
+@mixin textos {
+    font-family: 'gandhi_sansregular';
+    color: $text-color;
+}
+

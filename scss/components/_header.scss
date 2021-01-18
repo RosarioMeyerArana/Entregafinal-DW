@@ -1,0 +1,119 @@
+@import '../base/colors';
+@import '../base/fonts';
+
+.navbar{
+    background-color: $bg-color;
+    font-family: $font-texto;
+    font-size: 16px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    // padding: 15px 20px;
+    z-index: 5;
+
+    a{
+        color: $text-color;
+
+        &:hover{
+            color: $color-titulo;
+        }
+    }
+
+    .container-fluid{
+        display: flex;
+
+    
+    .navbar-nav{
+        color: $text-color;
+
+        .nav-nosotros{
+            margin-left: 20px;
+        }
+
+        .nav-item{
+            margin-right: 25px;
+
+            &:hover {
+                text-decoration: underline;
+                color: $color-titulo;
+            }
+
+            .button-shop{
+                color: $text-color;
+            }
+
+
+            .cabernet {
+                a {
+                text-decoration: none;
+                color: $text-color;
+                }
+            
+                &:hover{
+                    color: $color-titulo;
+
+                    > .dropdown-cabernet{
+                        display: block;
+                        color: $color-titulo;
+                        }
+                }
+
+            
+                // .dropdown-cabernet{
+                //     position: absolute;
+                //     top: -8px;
+                //     right: -188px;
+                //     list-style: none;
+                //     background-color: white;
+                //     padding: 10px;
+                //     border-color: #46515C;
+                //     border-radius: 3px;
+                //     display: none;
+            
+                //     a{
+                //         text-decoration: none;
+
+                //         &:hover{
+                //             color: $color-titulo;
+                //         }
+
+                //     }
+
+                // }
+
+                .dropdown-cabernet{
+                    position: absolute;
+                    top: -8px;
+                    right: -288px;
+                    list-style: none;
+                    background-color: white;
+                    padding: 10px;
+                    border-color: #46515C;
+                    border-radius: 3px;
+                    display: none;
+
+
+                }
+            }
+        }
+
+    }
+
+    .container-carrito{
+        justify-content: flex-end;
+                
+        .fa-shopping-cart{
+            color: $text-color;
+            font-size: 20px;
+    
+            &:hover{
+                color: $color-titulo;
+                }
+            }
+        }
+    }
+}
+
+
+
+

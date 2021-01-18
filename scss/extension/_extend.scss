@@ -1,0 +1,28 @@
+@import '../base/colors';
+@import '../base/fonts';
+
+%flexbox {
+    display: flex;
+    justify-content: center;
+}
+
+%buttons {
+    font-family: 'Spinnaker', sans-serif;
+    background-color: $bg-color;
+    color: $text-color;
+    border-radius: 30px;
+    border-width: thin;
+    border-color: $text-color;
+}
+
+
+%titulos{
+    font-family: $font-titulo;
+    color: $color-titulo;
+    font-size: 35px;
+}
+
+%texto{
+    font-family: $font-texto;
+    color: $text-color;
+}
