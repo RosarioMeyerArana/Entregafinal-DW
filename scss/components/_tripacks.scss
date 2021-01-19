@@ -17,6 +17,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
     
         .item-tripack {
             margin: .5rem;
@@ -41,24 +42,6 @@
         
         }
     
-    }
-  
-    .container-button-tripacks{
-        display: flex;
-        justify-content: flex-end;
-        
-
-        .button-tripacks{
-            @extend %buttons;
-            width: 120px;
-            height: 32px ;
-            font-size: 20px;
-    
-            a{
-                text-decoration: none;
-                color: $text-color;
-            }
-        }
     }
 
 }

@@ -24,15 +24,17 @@
           @extend %buttons;
           text-align: center;
           margin-top: 14px;
-            a{
+            a{  
                 color: $text-color;
                 text-decoration: none;
                 
+                &:hover{
+                  color: $color-titulo;
+                }
                 }
 
               &:hover{
-              //  background-color: $bg-tripacks;
-              //  @include transform (scale(1.1)); 
+               @include transform (scale(1.1)); 
               } 
             }
      
@@ -43,7 +45,7 @@
     // X-Small devices (portrait phones, less than 576px)
   @media (max-width: 575.98px) {
     .container-home{
-      margin: 5rem 1rem 1rem 1rem;
+      margin: 4rem 1rem 1rem 1rem;
     }
 
     .img-home-sm{

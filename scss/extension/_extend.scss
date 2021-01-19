@@ -1,11 +1,6 @@
 @import '../base/colors';
 @import '../base/fonts';
 
-%flexbox {
-    display: flex;
-    justify-content: center;
-}
-
 %buttons {
     font-family: 'Spinnaker', sans-serif;
     background-color: transparent;
@@ -17,6 +12,7 @@
     &:hover{
         color: $color-titulo;
         border-color: $color-titulo;
+        border-style: solid;
     }
 }
 

@@ -80,10 +80,17 @@ body{
     padding: 1.5rem 10rem 1rem 10rem;
 }
 
-.carrito-shop{
+.ver-shop{
     font-family: $font-texto;
     background-color: $bg-color;
-    color: $text-color;
+    text-align: center;
     border-radius: 30px;
     border: none;
+    width: 5rem;
+    height: 2rem;
+
+    a{
+        text-decoration: none;
+        color: $text-color;
+    }
 }

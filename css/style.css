@@ -50,7 +50,7 @@
     width: 80%;
   }
 }
-.home-textos .button-home, .container-contacto .formulario-contacto .container-btn .button-submit, #tripacks .container-button-tripacks .button-tripacks {
+.shop-container .item-tripack .carrito-shop, .home-textos .button-home, .container-contacto .formulario-contacto .container-btn .button-submit {
   font-family: "Spinnaker", sans-serif;
   background-color: transparent;
   color: #46515C;
@@ -58,9 +58,10 @@
   border-width: 1px;
   border-color: #46515C;
 }
-.home-textos .button-home:hover, .container-contacto .formulario-contacto .container-btn .button-submit:hover, #tripacks .container-button-tripacks .button-tripacks:hover {
+.shop-container .item-tripack .carrito-shop:hover, .home-textos .button-home:hover, .container-contacto .formulario-contacto .container-btn .button-submit:hover {
   color: #A51C80;
   border-color: #A51C80;
+  border-style: solid;
 }
 
 .texto-home, .button-home, .titulo-nosotros,
@@ -190,7 +191,7 @@
     text-align: left;
   }
 }
-.home-textos .button-home, .container-contacto .formulario-contacto .container-btn .button-submit, #tripacks .container-button-tripacks .button-tripacks {
+.shop-container .item-tripack .carrito-shop, .home-textos .button-home, .container-contacto .formulario-contacto .container-btn .button-submit {
   font-family: "Spinnaker", sans-serif;
   background-color: transparent;
   color: #46515C;
@@ -198,9 +199,10 @@
   border-width: 1px;
   border-color: #46515C;
 }
-.home-textos .button-home:hover, .container-contacto .formulario-contacto .container-btn .button-submit:hover, #tripacks .container-button-tripacks .button-tripacks:hover {
+.shop-container .item-tripack .carrito-shop:hover, .home-textos .button-home:hover, .container-contacto .formulario-contacto .container-btn .button-submit:hover {
   color: #A51C80;
   border-color: #A51C80;
+  border-style: solid;
 }
 
 .texto-home, .button-home, .titulo-nosotros,
@@ -227,6 +229,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 #tripacks .container-tripacks .item-tripack {
   margin: 0.5rem;
@@ -248,19 +251,6 @@
   -o-transform: scale(1.1);
   transform: scale(1.1);
   transition-duration: 0.8s;
-}
-#tripacks .container-button-tripacks {
-  display: flex;
-  justify-content: flex-end;
-}
-#tripacks .container-button-tripacks .button-tripacks {
-  width: 120px;
-  height: 32px;
-  font-size: 20px;
-}
-#tripacks .container-button-tripacks .button-tripacks a {
-  text-decoration: none;
-  color: #46515C;
 }
 
 /* MEDIA QUERIES */
@@ -294,7 +284,7 @@
     font-size: 80px;
   }
 }
-.home-textos .button-home, .container-contacto .formulario-contacto .container-btn .button-submit, #tripacks .container-button-tripacks .button-tripacks {
+.shop-container .item-tripack .carrito-shop, .home-textos .button-home, .container-contacto .formulario-contacto .container-btn .button-submit {
   font-family: "Spinnaker", sans-serif;
   background-color: transparent;
   color: #46515C;
@@ -302,9 +292,10 @@
   border-width: 1px;
   border-color: #46515C;
 }
-.home-textos .button-home:hover, .container-contacto .formulario-contacto .container-btn .button-submit:hover, #tripacks .container-button-tripacks .button-tripacks:hover {
+.shop-container .item-tripack .carrito-shop:hover, .home-textos .button-home:hover, .container-contacto .formulario-contacto .container-btn .button-submit:hover {
   color: #A51C80;
   border-color: #A51C80;
+  border-style: solid;
 }
 
 .texto-home, .button-home, .titulo-nosotros,
@@ -420,7 +411,7 @@
     font-size: 18px;
   }
 }
-.home-textos .button-home, #tripacks .container-button-tripacks .button-tripacks, .container-contacto .formulario-contacto .container-btn .button-submit {
+.shop-container .item-tripack .carrito-shop, .home-textos .button-home, .container-contacto .formulario-contacto .container-btn .button-submit {
   font-family: "Spinnaker", sans-serif;
   background-color: transparent;
   color: #46515C;
@@ -428,9 +419,10 @@
   border-width: 1px;
   border-color: #46515C;
 }
-.home-textos .button-home:hover, #tripacks .container-button-tripacks .button-tripacks:hover, .container-contacto .formulario-contacto .container-btn .button-submit:hover {
+.shop-container .item-tripack .carrito-shop:hover, .home-textos .button-home:hover, .container-contacto .formulario-contacto .container-btn .button-submit:hover {
   color: #A51C80;
   border-color: #A51C80;
+  border-style: solid;
 }
 
 .texto-home, .button-home, .titulo-nosotros,
@@ -465,10 +457,20 @@
   color: #46515C;
   text-decoration: none;
 }
+.home-textos .button-home a:hover {
+  color: #A51C80;
+}
+.home-textos .button-home:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
 /* MEDIA QUERIES */
 @media (max-width: 575.98px) {
   .container-home {
-    margin: 5rem 1rem 1rem 1rem;
+    margin: 4rem 1rem 1rem 1rem;
   }
 
   .img-home-sm {
@@ -641,6 +643,7 @@
 .container-pasos {
   margin-top: 10rem;
   margin-bottom: 7rem;
+  margin-right: 0 !important;
 }
 .container-pasos .paso-1 img, .container-pasos .paso-2 img, .container-pasos .paso-3 img {
   width: 40%;
@@ -676,6 +679,9 @@
     font-size: 20px;
   }
 }
+.list-group-item {
+  font-family: "gandhi_sansregular";
+}
 .list-group-item:active {
   background-color: #DBDEE1;
   color: whitesmoke;
@@ -684,9 +690,25 @@
 .shop-container {
   margin-top: 6rem;
   margin-left: 4rem;
+  margin-right: 0;
 }
 .shop-container .inline-shop {
   display: inline-block;
+}
+.shop-container .inline-shop .card-text {
+  margin-bottom: 5px;
+}
+.shop-container .inline-shop .name-bodega {
+  font-size: 10px;
+}
+.shop-container .item-tripack {
+  text-align: center;
+}
+.shop-container .item-tripack .carrito-shop {
+  width: 7rem;
+  height: 2rem;
+  font-family: "gandhi_sansregular";
+  font-size: 0.8rem;
 }
 
 * {
@@ -741,12 +763,18 @@ body {
   padding: 1.5rem 10rem 1rem 10rem;
 }
 
-.carrito-shop {
+.ver-shop {
   font-family: "gandhi_sansregular";
   background-color: #EFEFEF;
-  color: #46515C;
+  text-align: center;
   border-radius: 30px;
   border: none;
+  width: 5rem;
+  height: 2rem;
+}
+.ver-shop a {
+  text-decoration: none;
+  color: #46515C;
 }
 
 /*# sourceMappingURL=style.css.map */

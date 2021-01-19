@@ -1,17 +1,46 @@
 @import '../base/colors';
 
-.list-group-item:active {
+.list-group-item{
+    font-family: $font-texto;
+
+    &:active {
     background-color: $bg-tripacks;
     color: $bg-color-secundario;
-}
+    }
+}   
 
 
 .shop-container{
     margin-top: 6rem;
     margin-left: 4rem;
+    margin-right: 0;
+    
  
     .inline-shop{
     display: inline-block;
+    
+    .card-text{
+        margin-bottom: 5px;
     }
+
+    .name-bodega{
+        font-size: 10px;
+    }
+
+    }
+
+    .item-tripack{
+        text-align: center;
+
+        .carrito-shop{
+            @extend %buttons;
+            width: 7rem;
+            height: 2rem;
+            font-family: $font-texto;
+            font-size: .8rem;
+            
+        }
+
+        }    
 
 } 
