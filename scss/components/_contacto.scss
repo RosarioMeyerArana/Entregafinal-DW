@@ -1,40 +1,39 @@
 @import '../extension/extend';
 
 
-#contacto{
+.container-contacto{
     scroll-margin-top: 8em;
-    // margin: 160px 80px 80px 80px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    margin-top: 10rem;
+    margin-right: auto;
+    margin-left: auto;
 
-    .form-group{
-      margin-top: 15px;
-      font-family: 'Spinnaker', sans-serif;
-      color: #46515C;
-    }
+    .formulario-contacto{
+    
+      .titulo-contacto{
+        font-size: 27px;
+      }
 
+      .form-group{
+        margin-bottom: 1rem;
+      }
+    
      .container-btn{
-      margin-top: 20px;
-       .button-submit {
-      @extend %buttons;
-      height: 30px;
-      width: 95px;
+      margin-top: .8rem;
+       
+        .button-submit {
+        @extend %buttons;
+        height: 30px;
+        width: 95px;
      
       &:hover {
           text-decoration: underline;
         }
+     
       }
     }
-
-    .map-pickup {
-      margin-right: 80px;
-      iframe {
-      border-radius: 10px;
-     }
-
-    }
+  }
 }
+
 
 
 

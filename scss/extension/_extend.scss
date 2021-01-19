@@ -8,18 +8,22 @@
 
 %buttons {
     font-family: 'Spinnaker', sans-serif;
-    background-color: $bg-color;
+    background-color: transparent;
     color: $text-color;
     border-radius: 30px;
-    border-width: thin;
+    border-width: 1px;
     border-color: $text-color;
+
+    &:hover{
+        color: $color-titulo;
+        border-color: $color-titulo;
+    }
 }
 
 
 %titulos{
     font-family: $font-titulo;
     color: $color-titulo;
-    font-size: 35px;
 }
 
 %texto{

@@ -2,12 +2,9 @@
 @import '../extension/mixins';
 
 
-    .container{
-      display: flex;
-      margin-top: 5rem;
-
         .container-home{
-          background-image: url(../../imagenes/fondo-home.svg);
+          display: flex;
+          margin-top: 5rem;
         }  
 
        .home-textos{
@@ -34,21 +31,19 @@
                 }
 
               &:hover{
-               background-color: $bg-tripacks;
-               @include transform (scale(1.1)); 
+              //  background-color: $bg-tripacks;
+              //  @include transform (scale(1.1)); 
               } 
             }
      
       }
     
-    }
-    
 
    /* MEDIA QUERIES */
     // X-Small devices (portrait phones, less than 576px)
   @media (max-width: 575.98px) {
-    #home{
-      margin: 80px 20px;
+    .container-home{
+      margin: 5rem 1rem 1rem 1rem;
     }
 
     .img-home-sm{
@@ -74,11 +69,17 @@
         line-height: 1.3;
         margin-top: 8px;
                  }  
-                 
-    .button-home{
+    
+    .container-button-home{
+      display: flex;
+      justify-content: center; 
+      
+      .button-home{
+      text-align: center;
       font-size: 16px;
       width: 130px;
       height: 40px;
+      }
     }             
    }
  }
@@ -86,11 +87,6 @@
 
       // Small devices (landscape phones, less than 768px)
   @media (min-width: 576px) and (max-width: 767.98px) { 
-    .container{
-      margin: 90px 50px;
-      display: flex;
-      align-items: center;
-    }
     
     .img-home-sm{
       display: block;
@@ -108,7 +104,7 @@
 
       .texto-home{ 
         text-align: left;
-        font-size: 30px;
+        font-size: 32px;
         line-height: 1.2;
         margin-top: 12px;
       }
@@ -119,12 +115,20 @@
         margin-top: 12px;
        }      
 
-       .button-home{
-        font-size: 13px;
-        width: 115px;
-        height: 30px;
-        margin-top: 12px;
-         }   
+
+       .container-button-home{
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+
+        .button-home{
+          font-size: 13px;
+          width: 115px;
+          height: 30px;
+          margin-top: 12px;
+           }   
+       }
+       
 
     }
    }
@@ -132,30 +136,35 @@
 
   // Medium devices (tablets, less than 992px)
   @media (min-width: 768px) and (max-width: 991.98px) { 
-    .container{
-      margin: 100px 50px;
-    }
-   
+    .container-home{
+      margin-left: 2rem;
+      margin-right: 2rem;
+
     .img-home-sm{
       display: none;
     }
     .img-home{
       display: block;
-      width: 150%;
+      width: 130%;
+      position: relative;
+      left: -3rem;
+      z-index: -1;
     }
     .home-textos{
       
         .texto-home{
-          font-size: 43px;
+          font-size: 40px;
           line-height: 1.2;
           margin-top: 12px; 
           text-align: left;
              }
 
       .subtitulo-home{
-        font-size: 15px;
+        font-size: 16px;
        margin-top: 13px;
-       }       
+       }  
+       
+
        .button-home{
         font-size: 13px;
         width: 120px;
@@ -164,24 +173,31 @@
     }
     }
    }
+  }
+
+
   // Large devices (desktops, less than 1200px)
   @media (min-width: 992px) and (max-width: 1199.98px) { 
-    .container{
-      margin: 100px 60px;
-    }
-    
+    .container-home{
+      margin-left: 1.5rem;
+      margin-right: 3rem;
+
+
     .img-home-sm{
       display: none;
     }
     .img-home{
       display: block;
-      width: 140%;
+      width: 130%;
+      position: relative;
+      left: -4rem;
+      z-index: -1;
     }
 
     .home-textos{
       
       .texto-home{
-          font-size: 58px;
+          font-size: 56px;
           line-height: 1.2;
           margin-top: 12px; 
           text-align: left;
@@ -189,6 +205,7 @@
 
       .subtitulo-home{
         font-size: 18px;
+        width: 90%;
        margin-top: 13px;
        }       
 
@@ -199,28 +216,34 @@
         margin-top: 14px;
     }
     }
-
-   }
+    }
+  }
 
 
 
   // X-Large devices (large desktops, less than 1400px)
   @media (min-width: 1199.99px) { 
-    .container{
-      // margin: 80px 90px;
-    }
+    .container-home{
+      margin-right: 2rem ;
 
+
+    
     .img-home-sm{
       display: none;
     }
     .img-home{
       display: block;
+      width: 120%;
+      position: relative;
+      left: -6rem;
+      top: -1rem;
+      z-index: -1;
     }
 
     .home-textos{
 
       .texto-home{
-          font-size: 65px;
+          font-size: 66px;
           line-height: 1.2;
           text-align: left;
              }
@@ -237,5 +260,5 @@
         margin-top: 14px;
     }
     }
-
-   }
+  }
+}

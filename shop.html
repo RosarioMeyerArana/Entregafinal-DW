@@ -60,61 +60,54 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light shadow-sm rounded">
-        <div class="container-fluid">
+     <!-- MENU -->
 
-          <!-- LOGO -->
-            <a class="navbar-brand" href=index.html><img src="imagenes/logo.png" alt="logo"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+  <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+    <div class="container-fluid">
 
-          <!-- MENU -->
-          <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item nav-nosotros">
-                <a class="nav-link active" aria-current="page" href="index.html#nosotros">Nosotros</a>
-              </li>
+      <a href="index.html"><img class="logo-header" src="imagenes/logo.png" alt="logo"></a>
 
-              <li class="nav-item">
-                <a class="nav-link active" href="index.html#tripacks">Tripacks</a>
-              </li>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-              <li class="nav-item">
-                <a class="nav-link active" href="index.html#bodegas">Bodegas</a>
-              </li>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item nav-nosotros">
+            <a class="nav-link" aria-current="page" href="#nosotros">Nosotros</a>
+          </li>
 
-              <li class="nav-item dropdown">
-                <a class="nav-link active button-shop" href="shop.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Shop
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <li><a class="dropdown-item" href="shop.html">Malbec</a></li>
-                  <li class="dropdown-item nav-item cabernet dropdown"><a href="shop.html">Cabernet</a>
-                    <ul class="dropdown-cabernet">
-                        <li> <a class="dropdown-item" href="shop.html">Cabernet Franc</a></li>
-                        <li><a class="dropdown-item" href="shop.html">Cabernet Sauvignon</a></li>
-                    </ul>
-                    </li>
-                  <li><a class="dropdown-item" href="shop.html">Bonarda</a></li>
-                  <li><a class="dropdown-item" href="shop.html">Merlot</a></li>
-                  <li><a class="dropdown-item" href="shop.html">Blend</a></li>
-                  <li><a class="dropdown-item" href="shop.html">Blancos y Rosados</a></li>
-                </ul>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link active" href="index.html#contacto">Contacto</a>
-              </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tripacks">Tripacks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#bodegas">Bodegas</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle button-shop" href="shop.html" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Shop
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="shop.html">Malbec</a></li>
+              <li> <a class="dropdown-item" href="shop.html">Cabernet</a></li>
+              <li><a class="dropdown-item" href="shop.html">Bonarda</a></li>
+              <li><a class="dropdown-item" href="shop.html">Merlot</a></li>
+              <li><a class="dropdown-item" href="shop.html">Blend</a></li>
+              <li><a class="dropdown-item" href="shop.html">Blancos y Rosados</a></li>
             </ul>
-
-            <div class="container-carrito">
-              <i class="fas fa-shopping-cart"></i>
-            </div>
-
-          </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+        <div class="container-carrito">
+          <i class="fas fa-shopping-cart"></i>
         </div>
-      </nav>
+      </div>
+    </div>
+  </nav>
 
       <!-- whatsapp -->
       <div class="container-whapp shadow">
@@ -137,7 +130,7 @@
         </div>
         <div class="col-10">
           <div class="tab-content" id="nav-tabContent">
-
+            
             <!-- MALBEC -->
             <div class="tab-pane fade show active mb-5" id="list-malbec" role="tabpanel" aria-labelledby="list-malbec-list">
               <div class="card shadow item-tripack col-xs-12 col-sm-4 col-md-4 col-lg-1 m-1 inline-shop" style="width: 16rem;">
@@ -236,9 +229,8 @@
                   </div>
               </div>
             </div>
-          </div>
-
-
+            
+            
             <!-- CABERNET -->
             <div class="tab-pane fade mb-5" id="list-cabernet" role="tabpanel" aria-labelledby="list-cabernet-list">
               <div class="card shadow item-tripack col-xs-12 col-sm-4 col-md-4 col-lg-1 m-1 inline-shop" style="width: 16rem;">
@@ -286,9 +278,9 @@
                   </div>
               </div>
             </div>
-
-
-            <!-- BONARDA -->
+           
+           
+           <!-- BONARDA -->
             <div class="tab-pane fade mb-5" id="list-bonarda" role="tabpanel" aria-labelledby="list-bonarda-list">
               <div class="card shadow item-tripack col-xs-12 col-sm-4 col-md-4 col-lg-1 m-1 inline-shop" style="width: 16rem;">
                 <img src="imagenes/bonarda/aristides-bonarda.png" class="card-img-top" alt="Pack de 3 vinos Malbec">
@@ -308,9 +300,9 @@
                   </div>
               </div>
             </div>
-            
-            
-            <!-- MERLOT -->
+           
+           
+           <!-- MERLOT -->
             <div class="tab-pane fade mb-5" id="list-merlot" role="tabpanel" aria-labelledby="list-merlot-list">
               <div class="card shadow item-tripack col-xs-12 col-sm-4 col-md-4 col-lg-1 m-1 inline-shop" style="width: 16rem;">
                 <img src="imagenes/merlot/aristides.png" class="card-img-top" alt="Pack de 3 vinos Malbec">
@@ -321,8 +313,8 @@
                   </div>
               </div>
             </div>
-            
-            
+           
+           
             <!-- BLEND -->
             <div class="tab-pane fade mb-5" id="list-blendR" role="tabpanel" aria-labelledby="list-blendR-list">
               <div class="card shadow item-tripack col-xs-12 col-sm-4 col-md-4 col-lg-1 m-1 inline-shop" style="width: 16rem;">
@@ -388,9 +380,9 @@
                   </div>
               </div>
             </div>
-            
-            
-            <!-- BLANCOS Y ROSADOS -->
+           
+           
+           <!-- BLANCOS Y ROSADOS -->
             <div class="tab-pane fade mb-5" id="list-blancosYrosados" role="tabpanel" aria-labelledby="list-blancosYrosados-list">
               <div class="card shadow item-tripack col-xs-12 col-sm-4 col-md-4 col-lg-1 m-1 inline-shop" style="width: 16rem;">
                 <img src="imagenes/blancos/almahuar.png" class="card-img-top" alt="Pack de 3 vinos Malbec">
@@ -419,9 +411,10 @@
                   </div>
               </div>
             </div>
-            
-            
-            <!-- TRIPACKS -->
+           
+           
+           
+           <!-- TRIPACKS -->
             <div class="tab-pane fade mb-5" id="list-packsR" role="tabpanel" aria-labelledby="list-packsR-list">
               <div class="card shadow item-tripack col-xs-12 col-sm-4 col-md-4 col-lg-1 m-1 inline-shop" style="width: 16rem;">
                 <img src="imagenes/combo1.png" class="card-img-top" alt="Pack de 3 vinos Malbec">
@@ -459,7 +452,10 @@
             </div>
           </div>
         </div>
+      </div>
 
+
+          
     <!-- FOOTER -->
 
     <footer class="footer">

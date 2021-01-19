@@ -1,3 +1,10 @@
+@import '../base/colors';
+
+.list-group-item:active {
+    background-color: $bg-tripacks;
+    color: $bg-color-secundario;
+}
+
 
 .shop-container{
     margin-top: 6rem;

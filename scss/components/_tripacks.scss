@@ -5,24 +5,24 @@
 
 #tripacks{
     padding: 0px 80px 0px 80px;
-    scroll-margin-top: -3em;
+    scroll-margin-top: 3.5em;
     background-color: $bg-tripacks;
 
     .titulo-tripacks{
         color: $bg-color-secundario;
-        font-size: 70px;
-        margin-bottom: 20px;
     }   
 
     .container-tripacks{
-        padding: 10px;
+        padding: 10px ;
         display: flex;
         justify-content: center;
+        align-items: center;
     
         .item-tripack {
+            margin: .5rem;
             padding: 5px;
             background-color: $bg-color-secundario;
-            border-radius: 10px;
+            border-radius: 20px;
             border: none;
 
             .nombre-tripack{
@@ -46,6 +46,7 @@
     .container-button-tripacks{
         display: flex;
         justify-content: flex-end;
+        
 
         .button-tripacks{
             @extend %buttons;
@@ -60,4 +61,49 @@
         }
     }
 
+}
+
+
+/* MEDIA QUERIES */
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px){
+    .titulo-tripacks{
+    text-align: left;
+    font-size: 50px;
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (min-width: 576px) and (max-width: 767.98px){
+    .titulo-tripacks{
+        text-align: left;
+        font-size: 65px;
+        }
+}
+
+
+// Medium devices (tablets, less than 992px)
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .titulo-tripacks{
+        text-align: center;
+        font-size: 75px;
+        }
+}
+
+
+ // Large devices (desktops, less than 1200px)
+ @media (min-width: 992px) and (max-width: 1199.98px){
+    .titulo-tripacks{
+        text-align: left;
+        font-size: 80px;
+        }
+}
+
+
+ // X-Large devices (large desktops, less than 1400px)
+ @media (min-width: 1199.99px) {
+    .titulo-tripacks{
+        text-align: left;
+        font-size: 80px;
+        }
 }

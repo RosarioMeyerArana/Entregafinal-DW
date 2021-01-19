@@ -1,15 +1,21 @@
+@import'../base/colors';
+@import'../base/fonts';
+
 .container-pasos{
-    // margin: 200px 80px 80px 80px;
+    margin-top: 10rem;
+    margin-bottom: 7rem;
 
     .paso-1, .paso-2, .paso-3{
 
         img{
-            width: 50%;
+            width: 40%;
         }
  
         p{
-            margin-top: 15%;
+            margin-top: 2rem;
             text-align: center;
+            color: $text-color;
+            font-family: $font-texto;
         }
     }
 }
@@ -18,7 +24,13 @@
 // X-Small devices (portrait phones, less than 576px)
     @media (max-width: 575.98px){
         .paso-1, .paso-2, .paso-3{
-            font-size: 8px;
+            img{
+                margin-top: 4rem;
+            }
+            p{
+                font-size: 16px;
+            }
+            
         }
     }
 
@@ -26,7 +38,7 @@
 @media (min-width: 576px) and (max-width: 767.98px) {  
     
     .paso-1, .paso-2, .paso-3{
-        font-size: 12px;
+        font-size: 14px;
     }
 } 
 
