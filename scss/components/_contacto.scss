@@ -24,12 +24,8 @@
         @extend %buttons;
         height: 30px;
         width: 95px;
-     
-      &:hover {
-          text-decoration: underline;
+        
         }
-     
-      }
     }
   }
 }

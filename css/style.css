@@ -328,9 +328,6 @@
   height: 30px;
   width: 95px;
 }
-.container-contacto .formulario-contacto .container-btn .button-submit:hover {
-  text-decoration: underline;
-}
 
 #bodegas {
   scroll-margin-top: 9em;
