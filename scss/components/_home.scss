@@ -24,17 +24,14 @@
           @extend %buttons;
           text-align: center;
           margin-top: 14px;
-            a{  
-                color: $text-color;
+             a{  
+                 color: $text-color;
                 text-decoration: none;
                 
-                &:hover{
-                  color: $color-titulo;
-                }
-                }
-
-              &:hover{
-               @include transform (scale(1.1)); 
+                 &:hover{
+                   color: $color-titulo;
+                 }
+                
               } 
             }
      

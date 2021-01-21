@@ -72,25 +72,77 @@ body{
         }
 }
 
-.newsletter-container{
-    margin-top: 5rem;
-    margin-bottom: 0px;
+.newsletter{
+    width: 100%;
+    padding: 0;
     background-color: $bg-color-secundario;
+
+    .newsletter-container{
+    width: 60%;
+    margin-top: 1.6rem;
     text-align: center;
-    padding: 1.5rem 10rem 1rem 10rem;
+    justify-content: center;
+}
 }
 
-.ver-shop{
-    font-family: $font-texto;
-    background-color: $bg-color;
-    text-align: center;
-    border-radius: 30px;
-    border: none;
-    width: 5rem;
-    height: 2rem;
-
-    a{
-        text-decoration: none;
-        color: $text-color;
+/* MEDIA QUERIES NEWSLETTER */
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px){
+    .newsletter-container{
+        font-size: 14px;
     }
 }
+
+
+
+.welcome{
+    padding: 3rem;
+    width: 23rem;
+    height: 15rem;
+    border-radius: 30px;
+    
+    .welcome-text{
+        font-size: 1.3rem;
+        font-family: $font-texto;
+        color: $text-color;
+
+    }
+    
+    .btn-access{
+        @extend %buttons;
+    
+    }
+
+}
+
+
+// .container-fondo{
+//     background-image: url(../imagenes/fondo-home.svg);
+//     text-align: center;
+    
+
+//     .age-access{
+//         text-align: center;
+//         margin: 0 auto;
+
+//         .btn-access{
+//             @extend %buttons;
+//             width: 2.5rem;
+
+//             p{
+//                 margin-top: 3rem;
+//             }
+
+//             a{
+//                 text-decoration: none;
+//                 color: $text-color;
+                
+//                 &:hover{
+//                     color: $color-titulo;
+//                 }
+//             }
+//         }
+
+
+//     }
+// }

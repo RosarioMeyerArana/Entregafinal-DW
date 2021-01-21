@@ -38,9 +38,137 @@
             height: 2rem;
             font-family: $font-texto;
             font-size: .8rem;
-            
         }
-
-        }    
-
+    }    
 } 
+
+
+
+/* MEDIA QUERIES SHOP */
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px){
+    .shop-container{
+       margin-top: 5rem;
+    
+       .tab-container{
+        font-size: 12px;
+        width: 80%;
+        height: 80%;
+        text-align: center;
+        margin-left: .3rem;
+   
+        .list-group-item{
+            padding: .2rem 1rem;
+        }
+       }
+   
+    .tab-content{
+       text-align: center;
+       }
+   
+       }
+   }
+   
+   // Small devices (landscape phones, less than 768px)
+   @media (min-width: 576px) and (max-width: 767.98px){
+       .shop-container{
+           margin-top: 5rem;
+           margin-left: 1rem;
+        
+           .tab-container{
+           margin-top: .3rem;
+            font-size: 12px;
+            text-align: center;
+       
+            .list-group-item{
+                padding: .3rem 0rem;
+            }
+           }
+       
+        .tab-content{
+           text-align: center;
+           }
+       
+           }
+   }
+   
+   // Medium devices (tablets, less than 992px)
+   @media (min-width: 768px) and (max-width: 991.98px){
+   .shop-container{
+    margin-top: 5rem;
+    margin-left: 5rem;
+ 
+    .tab-container{
+    margin-top: .3rem;
+    text-align: center;
+    width: 16%;
+    margin-right: 0%;
+    padding-right: 0;
+    padding-left: 0;
+
+     .list-group-item{
+         padding: .3rem 0rem;
+         margin-right: 0;
+     }
+    }
+
+ .tab-content{
+    padding-left: 0;
+
+    }
+
+    }
+}
+
+
+   
+    // Large devices (desktops, less than 1200px)
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+        .shop-container{
+            margin-top: 5rem;
+            margin-left: 5rem;
+         
+            .tab-container{
+            margin-top: .3rem;
+            text-align: center;
+            width: 16%;
+            margin-right: 0%;
+            padding-right: 0;
+            padding-left: 0;
+        
+             .list-group-item{
+                 padding: .3rem 0rem;
+                 margin-right: 0;
+             }
+            }
+        
+         .tab-content{
+            padding-left: 0;
+        
+            }
+        
+            }
+
+    }
+   
+      // X-Large devices (large desktops, less than 1400px)
+      @media (min-width: 1199.99px){
+
+        .shop-container{
+
+            .tab-container{
+            margin-top: .3rem;
+        
+             .list-group-item{
+                
+             }
+            }
+        
+         .tab-content{
+        
+            }
+        
+            }
+    
+      }
+   

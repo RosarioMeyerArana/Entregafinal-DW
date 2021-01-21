@@ -13,6 +13,8 @@
         color: $color-titulo;
         border-color: $color-titulo;
         border-style: solid;
+        @include transform (scale(1.1)); 
+        
     }
 }
 
