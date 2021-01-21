@@ -7,7 +7,9 @@
   width: 100%;
   z-index: 5;
 }
-.navbar > .container-fluid {
+.navbar .container-fluid {
+  display: inline;
+  display: flex;
   flex-wrap: nowrap;
 }
 .navbar a {
@@ -19,8 +21,9 @@
 .navbar .container-fluid {
   display: flex;
 }
-.navbar .container-fluid .navbar-nav .nav-nosotros {
-  margin-left: 1rem;
+.navbar .container-fluid .navbar-nav .dropdown-item:active {
+  background-color: #DBDEE1;
+  color: whitesmoke;
 }
 .navbar .container-fluid .navbar-nav .nav-item {
   margin-right: 25px;
@@ -49,12 +52,34 @@
 }
 
 @media (max-width: 575.98px) {
-  .logo-header {
+  .container-menu {
+    padding-left: 1rem;
+  }
+  .container-menu .logo-header {
     width: 80%;
-    justify-content: flex-end;
   }
 }
-.welcome .btn-access, .shop-container .item-tripack .carrito-shop, .home-textos .button-home, .container-contacto .formulario-contacto .container-btn .button-submit {
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .container-menu {
+    padding-left: 1rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .container-menu {
+    padding-left: 1rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .nav-nosotros {
+    margin-left: 1rem;
+  }
+}
+@media (min-width: 1199.99px) {
+  .nav-nosotros {
+    margin-left: 1rem;
+  }
+}
+.shop-container .item-tripack .carrito-shop, .home-textos .button-home, .container-contacto .formulario-contacto .container-btn .button-submit, #tripacks .container-tripacks .item-tripack .ver-shop {
   font-family: "Spinnaker", sans-serif;
   background-color: transparent;
   color: #46515C;
@@ -62,7 +87,7 @@
   border-width: 1px;
   border-color: #46515C;
 }
-.welcome .btn-access:hover, .shop-container .item-tripack .carrito-shop:hover, .home-textos .button-home:hover, .container-contacto .formulario-contacto .container-btn .button-submit:hover {
+.shop-container .item-tripack .carrito-shop:hover, .home-textos .button-home:hover, .container-contacto .formulario-contacto .container-btn .button-submit:hover, #tripacks .container-tripacks .item-tripack .ver-shop:hover {
   color: #A51C80;
   border-color: #A51C80;
   border-style: solid;
@@ -96,6 +121,14 @@
   text-decoration: none;
   color: #46515C;
 }
+.footer .no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.footer .no-gutters > [class^=col-], .footer .no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
 .footer .delsurwines-footer {
   flex-direction: column;
 }
@@ -110,14 +143,17 @@
 }
 .footer .rrss {
   flex-direction: column;
+  width: 25%;
 }
 .footer .rrss i {
   font-size: 25px;
   margin-right: 15px;
 }
 .footer .copyright {
-  font-size: 12px;
+  font-size: 10px;
   margin-top: 8px;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .container {
@@ -199,7 +235,7 @@
     text-align: left;
   }
 }
-.welcome .btn-access, .shop-container .item-tripack .carrito-shop, .home-textos .button-home, .container-contacto .formulario-contacto .container-btn .button-submit {
+.shop-container .item-tripack .carrito-shop, .home-textos .button-home, .container-contacto .formulario-contacto .container-btn .button-submit, #tripacks .container-tripacks .item-tripack .ver-shop {
   font-family: "Spinnaker", sans-serif;
   background-color: transparent;
   color: #46515C;
@@ -207,7 +243,7 @@
   border-width: 1px;
   border-color: #46515C;
 }
-.welcome .btn-access:hover, .shop-container .item-tripack .carrito-shop:hover, .home-textos .button-home:hover, .container-contacto .formulario-contacto .container-btn .button-submit:hover {
+.shop-container .item-tripack .carrito-shop:hover, .home-textos .button-home:hover, .container-contacto .formulario-contacto .container-btn .button-submit:hover, #tripacks .container-tripacks .item-tripack .ver-shop:hover {
   color: #A51C80;
   border-color: #A51C80;
   border-style: solid;
@@ -235,6 +271,7 @@
 }
 #tripacks .titulo-tripacks {
   color: whitesmoke;
+  text-align: center;
 }
 #tripacks .container-tripacks {
   padding: 10px;
@@ -265,11 +302,9 @@
   transition-duration: 0.8s;
 }
 #tripacks .container-tripacks .item-tripack .ver-shop {
-  font-family: "gandhi_sansregular";
-  background-color: #DBDEE1;
+  font-family: "gandhi_sansregular" !important;
   text-align: center;
   border-radius: 30px;
-  border: none;
   width: 5.5rem;
   height: 2rem;
 }
@@ -306,17 +341,15 @@
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .titulo-tripacks {
-    text-align: left;
     font-size: 80px;
   }
 }
 @media (min-width: 1199.99px) {
   .titulo-tripacks {
-    text-align: left;
     font-size: 80px;
   }
 }
-.welcome .btn-access, .shop-container .item-tripack .carrito-shop, .home-textos .button-home, .container-contacto .formulario-contacto .container-btn .button-submit {
+.shop-container .item-tripack .carrito-shop, .home-textos .button-home, .container-contacto .formulario-contacto .container-btn .button-submit, #tripacks .container-tripacks .item-tripack .ver-shop {
   font-family: "Spinnaker", sans-serif;
   background-color: transparent;
   color: #46515C;
@@ -324,7 +357,7 @@
   border-width: 1px;
   border-color: #46515C;
 }
-.welcome .btn-access:hover, .shop-container .item-tripack .carrito-shop:hover, .home-textos .button-home:hover, .container-contacto .formulario-contacto .container-btn .button-submit:hover {
+.shop-container .item-tripack .carrito-shop:hover, .home-textos .button-home:hover, .container-contacto .formulario-contacto .container-btn .button-submit:hover, #tripacks .container-tripacks .item-tripack .ver-shop:hover {
   color: #A51C80;
   border-color: #A51C80;
   border-style: solid;
@@ -444,7 +477,7 @@
     font-size: 18px;
   }
 }
-.welcome .btn-access, .shop-container .item-tripack .carrito-shop, .home-textos .button-home, .container-contacto .formulario-contacto .container-btn .button-submit {
+.shop-container .item-tripack .carrito-shop, .home-textos .button-home, #tripacks .container-tripacks .item-tripack .ver-shop, .container-contacto .formulario-contacto .container-btn .button-submit {
   font-family: "Spinnaker", sans-serif;
   background-color: transparent;
   color: #46515C;
@@ -452,7 +485,7 @@
   border-width: 1px;
   border-color: #46515C;
 }
-.welcome .btn-access:hover, .shop-container .item-tripack .carrito-shop:hover, .home-textos .button-home:hover, .container-contacto .formulario-contacto .container-btn .button-submit:hover {
+.shop-container .item-tripack .carrito-shop:hover, .home-textos .button-home:hover, #tripacks .container-tripacks .item-tripack .ver-shop:hover, .container-contacto .formulario-contacto .container-btn .button-submit:hover {
   color: #A51C80;
   border-color: #A51C80;
   border-style: solid;
@@ -717,9 +750,10 @@
 .list-group-item {
   font-family: "gandhi_sansregular";
 }
-.list-group-item:active {
-  background-color: #DBDEE1;
+.list-group-item.active {
+  background-color: #A51C80;
   color: whitesmoke;
+  border: none;
 }
 
 .shop-container {
@@ -825,7 +859,7 @@
   }
 }
 @media (min-width: 1199.99px) {
-  .shop-container .tab-container {
+  .tab-container {
     margin-top: 0.3rem;
   }
 }
@@ -861,7 +895,7 @@ body {
   width: 50px;
   height: 50px;
   bottom: 30px;
-  right: 30px;
+  right: 20px;
   background-color: #25d366;
   color: #FFF;
   border-radius: 50px;
@@ -890,17 +924,6 @@ body {
   .newsletter-container {
     font-size: 14px;
   }
-}
-.welcome {
-  padding: 3rem;
-  width: 23rem;
-  height: 15rem;
-  border-radius: 30px;
-}
-.welcome .welcome-text {
-  font-size: 1.3rem;
-  font-family: "gandhi_sansregular";
-  color: #46515C;
 }
 
 /*# sourceMappingURL=style.css.map */

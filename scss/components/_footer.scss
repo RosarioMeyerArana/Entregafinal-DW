@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-evenly;
 
+
     p{
         font-family: $font-titulo;
         margin-bottom: 8px;
@@ -14,6 +15,18 @@
         text-decoration: none;
         color: $text-color;
     }
+        
+    .no-gutters {
+        margin-right: 0;
+        margin-left: 0;
+      
+        & > [class^="col-"],
+        & > [class*=" col-"] {
+          padding-right: 0;
+          padding-left: 0;
+        }
+      }
+
 
     .delsurwines-footer{
         flex-direction: column;
@@ -33,15 +46,17 @@
 
     .rrss{
         flex-direction: column;
+        width: 25%;
          i{ font-size: 25px;
             margin-right: 15px;
          }
     }
 
     .copyright{
-        font-size: 12px;
+        font-size: 10px;
         margin-top: 8px;
+        padding-left: 3rem;
+        padding-right: 3rem;
     }
-
-}
+    }
 

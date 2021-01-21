@@ -10,6 +10,7 @@
 
     .titulo-tripacks{
         color: $bg-color-secundario;
+        text-align: center;
     }   
 
     .container-tripacks{
@@ -41,11 +42,11 @@
             }
             
             .ver-shop{
-                font-family: $font-texto;
-                background-color: $bg-tripacks;
+                @extend %buttons;
+                font-family: $font-texto !important;
+                // background-color: $bg-tripacks;
                 text-align: center;
                 border-radius: 30px;
-                border: none;
                 width: 5.5rem;
                 height: 2rem;
             
@@ -62,12 +63,6 @@
                 }
                 }
 
-                // &:hover{
-                //     background-color: $color-titulo;
-                //     a{
-                //     color: $bg-color-secundario;
-                // }
-                // }
             }
             
         }
@@ -107,7 +102,6 @@
  // Large devices (desktops, less than 1200px)
  @media (min-width: 992px) and (max-width: 1199.98px){
     .titulo-tripacks{
-        text-align: left;
         font-size: 80px;
         }
 }
@@ -116,7 +110,6 @@
  // X-Large devices (large desktops, less than 1400px)
  @media (min-width: 1199.99px) {
     .titulo-tripacks{
-        text-align: left;
         font-size: 80px;
         }
 }

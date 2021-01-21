@@ -1,12 +1,14 @@
 @import '../base/colors';
+@import '../base/fonts';
 
 .list-group-item{
     font-family: $font-texto;
 
-    &:active {
-    background-color: $bg-tripacks;
-    color: $bg-color-secundario;
-    }
+     &.active {
+     background-color: $color-titulo;
+     color: $bg-color-secundario;
+     border: none;
+     }
 }   
 
 
@@ -23,9 +25,9 @@
         margin-bottom: 5px;
     }
 
-    .name-bodega{
-        font-size: 10px;
-    }
+        .name-bodega{
+            font-size: 10px;
+        }
 
     }
 
@@ -154,20 +156,8 @@
       // X-Large devices (large desktops, less than 1400px)
       @media (min-width: 1199.99px){
 
-        .shop-container{
-
             .tab-container{
             margin-top: .3rem;
-        
-             .list-group-item{
-                
-             }
-            }
-        
-         .tab-content{
-        
-            }
-        
             }
     
       }
