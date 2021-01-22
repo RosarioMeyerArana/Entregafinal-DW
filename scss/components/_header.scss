@@ -10,13 +10,13 @@
     top: 0px;
     width: 100%;
     z-index: 5;
+    
+    & .navbar-toggler{
+        flex-wrap: nowrap;
+        float: right;
 
-    .container-fluid{
-        display: inline;
-        display: flex;
-        flex-wrap: nowrap; 
-         }
-        
+       }
+
 
     a{
         color: $text-color;
@@ -28,6 +28,9 @@
 
     .container-fluid{
         display: flex;
+        display: inline;
+        display: flex; 
+        flex-wrap: nowrap;
 
     
         .navbar-nav{

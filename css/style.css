@@ -7,10 +7,9 @@
   width: 100%;
   z-index: 5;
 }
-.navbar .container-fluid {
-  display: inline;
-  display: flex;
+.navbar .navbar-toggler {
   flex-wrap: nowrap;
+  float: right;
 }
 .navbar a {
   color: #46515C;
@@ -20,6 +19,9 @@
 }
 .navbar .container-fluid {
   display: flex;
+  display: inline;
+  display: flex;
+  flex-wrap: nowrap;
 }
 .navbar .container-fluid .navbar-nav .dropdown-item:active {
   background-color: #DBDEE1;
