@@ -17,12 +17,6 @@
 .navbar a:hover {
   color: #A51C80;
 }
-.navbar .container-fluid {
-  display: flex;
-  display: inline;
-  display: flex;
-  flex-wrap: nowrap;
-}
 .navbar .container-fluid .navbar-nav .dropdown-item:active {
   background-color: #DBDEE1;
   color: whitesmoke;
@@ -55,29 +49,50 @@
 
 @media (max-width: 575.98px) {
   .container-menu {
+    display: inline !important;
+    padding-left: 1rem;
+    flex-wrap: nowrap !important;
+  }
+  .container-menu .logo-header {
+    width: 70%;
+    margin-top: 8px;
+  }
+  .container-menu .nav-nosotros {
+    padding-top: 0.6rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .container-menu {
+    display: inline;
     padding-left: 1rem;
   }
   .container-menu .logo-header {
     width: 80%;
   }
 }
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .container-menu {
-    padding-left: 1rem;
-  }
-}
 @media (min-width: 768px) and (max-width: 991.98px) {
   .container-menu {
+    display: inline;
     padding-left: 1rem;
+  }
+  .container-menu .logo-header {
+    width: 80%;
+    margin-top: 4px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .nav-nosotros {
+  .container-fluid {
+    display: flex;
+  }
+  .container-fluid .nav-nosotros {
     margin-left: 1rem;
   }
 }
 @media (min-width: 1199.99px) {
-  .nav-nosotros {
+  .container-fluid {
+    display: flex;
+  }
+  .container-fluid .nav-nosotros {
     margin-left: 1rem;
   }
 }

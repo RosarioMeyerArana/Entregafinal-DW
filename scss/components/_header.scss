@@ -27,10 +27,9 @@
     }
 
     .container-fluid{
-        display: flex;
-        display: inline;
-        display: flex; 
-        flex-wrap: nowrap;
+        // display: inline;
+        // display: flex; 
+        // flex-wrap: nowrap;
 
     
         .navbar-nav{
@@ -87,12 +86,18 @@
 // X-Small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px){
     .container-menu{
+        display: inline !important;
+        padding-left: 1rem;
+        flex-wrap: nowrap !important;
 
         .logo-header{
-            width: 80%;
+            width: 70%;
+            margin-top: 8px;
         }
-
-        padding-left: 1rem;
+        
+        .nav-nosotros{
+            padding-top: .6rem;
+        }
     }
     
    
@@ -102,7 +107,15 @@
 // Small devices (landscape phones, less than 768px)
 @media (min-width: 576px) and (max-width: 767.98px){
     .container-menu{
+        display: inline;
         padding-left: 1rem;
+        // flex-wrap: nowrap;
+
+
+        .logo-header{
+            width: 80%;
+        }
+       
     }
     
         }
@@ -111,24 +124,44 @@
 // Medium devices (tablets, less than 992px)
 @media (min-width: 768px) and (max-width: 991.98px){
     .container-menu{
+        display: inline;
         padding-left: 1rem;
+        // flex-wrap: wrap;
+
+        .logo-header{
+            width: 80%;
+            margin-top: 4px;
+        }
+
     }
     
 }
 
  // Large devices (desktops, less than 1200px)
  @media (min-width: 992px) and (max-width: 1199.98px) {
-    .nav-nosotros{
-        margin-left: 1rem;
-      }
+    .container-fluid{
+        display: flex;
+    
+        .nav-nosotros{
+            margin-left: 1rem;
+          }
+    
+    }
 
  }
 
    // X-Large devices (large desktops, less than 1400px)
    @media (min-width: 1199.99px){
-    .nav-nosotros{
-        margin-left: 1rem;
-      }
+    .container-fluid{
+        display: flex;
+    
+        .nav-nosotros{
+            margin-left: 1rem;
+          }
+    
+    }
+    
+    
  
    }
 
