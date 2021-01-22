@@ -17,21 +17,21 @@
 .navbar a:hover {
   color: #A51C80;
 }
-.navbar .container-fluid .navbar-nav .dropdown-item:active {
+.navbar .navbar-nav .dropdown-item:active {
   background-color: #DBDEE1;
   color: whitesmoke;
 }
-.navbar .container-fluid .navbar-nav .nav-item {
+.navbar .navbar-nav .nav-item {
   margin-right: 25px;
 }
-.navbar .container-fluid .navbar-nav .nav-item a:hover {
+.navbar .navbar-nav .nav-item a:hover {
   text-decoration: underline;
   color: #A51C80;
 }
-.navbar .container-fluid .navbar-nav .button-shop a {
+.navbar .navbar-nav .button-shop a {
   color: #46515C;
 }
-.navbar .container-fluid .navbar-nav .button-shop a:hover {
+.navbar .navbar-nav .button-shop a:hover {
   color: #A51C80;
 }
 .navbar .container-carrito {
